@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>UNITED CIVIL DESIGN GROUP</title>
+    <link rel="shortcut icon" href="img/favicon.png" />
+    <link rel="stylesheet" href="css/plugins/fond-google.css">
+    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+   
+    <!-- Progress scroll totop -->
+    <div class="progress-wrap cursor-pointer">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+    </div>
+    <!-- Navbar -->
+     
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo -->
+            <div class="logo-wrapper">
+
+                <a class="logo" href="index.html"> <img src="img/UCDG_LOGO.png" class="logo-img" alt=""> </a>
+                
+            </div>
+            <!-- Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span> </button>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- Header Banner -->
+<section class="banner-header section-padding bg-img" data-overlay-dark="5" data-background="img/slider/1.jpg">
+    <div class="v-middle">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center mt-30">
+                    <h6>What We Do</h6>
+                    <h1>Our <span style="color: white;">Services</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<style>
+      /* Popup Overlay */
+      .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 999;
+        }
+
+        /* Popup Content */
+        .popup-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #fff;
+            padding: 30px;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Close Button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #888;
+        }
+
+        .close-btn:hover {
+            color: #000;
+        }
+</style>
+<!-- Services 3 -->
+<section class="services3 section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-houses"></i> </div>
+                    <h3>Estimation</h3>
+                    <button class="btn" >Read More</button>
+                    <a href="#" class="rmore active">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'In a civil consulting business, estimation entails precisely projecting the resources, time, and cost needed for building projects. It entails assessing labour requirements, material amounts, and project scope in addition to making sure that the budget is followed and lowering risks. Project efficiency, on-time completion, and conformity to customer expectations are all guaranteed by accurate estimating.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-living-room"></i> </div>
+                    <h3>RCC design</h3>
+                    
+                    <a href="#" class="rmore">
+                    <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-interior-design"></i> </div>
+                    <h3>Hydraulic design</h3>
+                    
+                    <a href="#" class="rmore">
+                    <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-medieval-house"></i> </div>
+                    <h3>Architectural planning</h3>
+                    
+
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                    <h3>Design of steel structures</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Valuation</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Road safety audit</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Structural audit</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Testing of concrete</h3>
+                   
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3> Testing of bitumen</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Testing of bricks</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Testing of cement</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Testing of soil</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Laboratory services</h3>
+                    
+                    <a href="#" class="rmore">
+                        <div class="arrow"> <i class="ti-arrow-top-right btn" onclick="showPopup('Post Title 2', 'This is the full description of Post Title 2. It contains more detailed information about the topic.')"></i> </div>
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 mb-30">
+                <div class="item">
+                    <div class="icon"> <i class="flaticon-sketch"></i> </div>
+                    <h3>Consultancy services</h3>
+                    
+                    <a href="#" class="rmore">
+                    <button class="arrow-btn" onclick="showPopup('Article 3', 'This is the full content of Article 3. More comprehensive information goes here.')">&#8592;</button> <!-- Left Arrow -->
+                        <div class="br-left-top">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                        <div class="br-right-bottom">
+                            <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-11 h-11">
+                                <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#101010"></path>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+        <h2>Article 2</h2>
+        <p>Click the arrow to read more.</p>
+        <button class="arrow-btn" onclick="showPopup('Article 2', 'This is the full content of Article 2. Here you can provide additional details and context.')">&#8595;</button> <!-- Down Arrow -->
+    </div>
+        </div>
+    </div>
+</section>
+
+<!-- WE ARE CONNECTED WITH -->
+
+<section class="services section-padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center mb-20">
+                    <div class="section-subtitle">MEMBERSHIP - MEMBER OF MASSIA .</div>
+                    <div class="section-title">WE ARE CONNECTED WITH</div>
+                </div>
+            </div>
+
+            <div class="row" style="padding-top: 3%;">
+                <div class="col-md-2">
+                    <h4 class="text-black">AMC</h4>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-black">HPCL</h4>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-black">NHAI</h4>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-black">PWD</h4>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-black">VNKV,PARBHANI.</h4>
+                </div>
+
+                <div class="col-md-2">
+                    <h4 class="text-black">CIDCO</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- Lets Talk -->
+<section class="lets-talk">
+        <div class="background bg-img bg-fixed section-padding" data-overlay-dark="5" data-background="img/slider/1.jpg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-subtitle">Contact Us</div>
+                        <div class="section-title">Let’s talk.
+                            <br>Have a project in mind?
+                        </div>
+                        <div class="wrap">
+                            <div class="social">
+                                <a href="#" class="icon"> <i class="fa-brands fa-instagram"></i> </a>
+                                <a href="#" class="icon"> <i class="fa-brands fa-twitter"></i> </a>
+                                <!-- <a href="#" class="icon"> <i class="fa-brands fa-behance"></i> </a> -->
+                                <a href="#" class="icon"> <i class="fa-brands fa-whatsapp"></i> </a>
+                            </div>
+                            <div class="dv"></div> <a href="mailto:united02cd@gmail.com">united02cd@gmail.com</a>
+                            <!-- <div class="dv"></div> <a href="tel:+11234567890">+(1) 123 456 7890</a> -->
+                            <div class="dv"></div> <a href="tel:+11234567890">+91 7507702934</a>
+                            <div class="dv"></div> <a href="tel:+11234567890">+91 9822115626</a>
+                            <div class="dv"></div> <a data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo" href="#0">Contact<i class="icon-right fa-light fa-arrow-up-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">&times;</span> <!-- Close Button -->
+        <h2 id="popupTitle"></h2>
+        <p id="popupDescription"></p>
+    </div>
+</div>
+<div class="popup-overlay" id="popupOverlay">
+    <div class="popup-content">
+        <span class="close-arrow" onclick="closePopup()">&#8593;</span> <!-- Up Arrow -->
+        <h2>Full Article</h2>
+        <p>This is the full content of the article. You can add more detailed information here.</p>
+    </div>
+</div>
+
+<script>
+    // Function to show the popup with dynamic content
+    function showPopup(title, description) {
+        document.getElementById('popuph3').textContent = title;
+        document.getElementById('popupDescription').textContent = description;
+        document.getElementById('popupOverlay').style.display = 'block';
+    }
+
+    // Function to close the popup
+    function closePopup() {
+        document.getElementById('popupOverlay').style.display = 'none';
+    }
+
+    // Close the popup when clicking outside the popup content
+    window.addEventListener('click', function(event) {
+        if (event.target === document.getElementById('popupOverlay')) {
+            closePopup();
+        }
+    });
+</script>
+<?html include 'footer.html' ?>
+<!-- Footer -->
