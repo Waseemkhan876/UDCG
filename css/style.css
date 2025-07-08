@@ -50,7 +50,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: antialiased;
-    font-smoothing: antialiased;
+     font-smoothing: antialiased;
 }
 * {
     margin: 0;
@@ -62,22 +62,27 @@ body {
     word-wrap: break-word;
 }
 body {
-    font-family: "Outfit", sans-serif;
-    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.95em;
-    color: #999;
+    color: #646262;
     overflow-x: hidden !important;
     /* background: #7df4fbfc; */
 }
 p {
-    font-family: "Outfit", sans-serif;
-    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
     font-weight: 300;
     line-height: 1.95em;
-    color: #999;
+    color: #464545;
     margin-bottom: 15px;
 }
+
+   /* services paragraph Color  */
+   .services p{
+    color: #9e9b9b;
+   }
+   
 h1 {
     font-size: 55px;
 }
@@ -102,7 +107,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Oswald", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 300;
     line-height: 1.5em;
     margin: 0 0 15px 0;
@@ -120,7 +125,7 @@ a,
 a:hover {
     display: inline-block;
     text-decoration: none;
-    color: inherit;
+    color: rgb(127, 209, 241);
 }
 b {
     font-weight: 300;
@@ -132,7 +137,7 @@ input,
 optgroup,
 select,
 textarea {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -153,13 +158,13 @@ textarea {
     padding: 18.5px 20px;
     height: auto;
     background-color: white;
-    border: 1px solid  rgb(169, 29, 58);
+    border: 1px solid  #2C4E80;
     -webkit-box-shadow: none;
     box-shadow: none;
     display: block;
     width: 100%;
     line-height: 1.5em;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 300;
     color: #999;
@@ -218,7 +223,7 @@ input[type="submit"] {
     padding: 19px 35px;
     border: none;
     border-radius: 0;
-    background-color: rgb(169, 29, 58);
+    background-color: #2C4E80;
     /* background-color: #c5a47e; */
     -webkit-transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
     transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
@@ -230,7 +235,7 @@ input[type="submit"] {
     border-radius: 30px;
 }
 input[type="submit"]:hover {
-    border: 2px solid rgb(169, 29, 58);
+    border: 2px solid #2C4E80;
     /* border: none; */
     background-color: #fff;
     color: black;
@@ -239,7 +244,7 @@ input[type="submit"]:hover {
 /* placeholder */
 ::-webkit-input-placeholder {
     color: #999;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 300;
 }
@@ -299,7 +304,7 @@ input[type="submit"]:hover {
     font-weight: 300;
 }
 .count {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .valign {
     display: -webkit-box;
@@ -476,7 +481,7 @@ hr {
 .list-icon span {
     font-size: 17px;
     font-weight: 700;
-    color:rgb(169, 29, 58);
+    color:#2C4E80;
     /* color: #c5a47e; */
 }
 .list-text {
@@ -614,12 +619,12 @@ hr {
     margin: 0 3px;
     border-radius: 50%;
     background: transparent;
-    border: 1px solid rgb(169, 29, 58);
+    border: 1px solid #2C4E80;
 }
 .owl-theme .owl-dots .owl-dot.active span,
 .owl-theme .owl-dots .owl-dot:hover span {
-    background: rgb(169, 29, 58);
-    border: 1px solid rgb(169, 29, 58);
+    background: #2C4E80;
+    border: 1px solid #2C4E80;
 }
 .owl-carousel .owl-nav button.owl-next,
 .owl-carousel .owl-nav button.owl-prev,
@@ -714,7 +719,7 @@ hr {
 }
 .section-title {
     font-size: 50px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgb(21, 21, 21);
     /* color: rgb(64,162,227); */
     font-weight: 400;
@@ -741,11 +746,11 @@ hr {
     color: #fff;
 }
 .section-subtitle {
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 20px;
     line-height: 15px;
-    color: rgb(169, 29, 58);
+    color: #507fc5;
     /* color: #c5a47e; */
     margin-bottom: 15px;
     position: relative;
@@ -760,6 +765,9 @@ hr {
 @media screen and (max-width: 991px) {
     .section-title {
         font-size: 40px;
+    }
+    .section-subtitle{
+        line-height: 25px;
     }
 }
 
@@ -794,8 +802,8 @@ hr {
     color: #fff;
 }
 .navbar .navbar-nav .nav-link {
-    font-family: "Oswald", sans-serif;
-    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
     font-size: 17px;
     color: #fff;
     margin: 1px;
@@ -810,7 +818,7 @@ hr {
     color: #fff;
 }
 .navbar .navbar-nav .nav-link:hover {
-    color: rgb(169, 29, 58);
+    color: #5d93e6;
 }
 .navbar .navbar-nav .nav-link:hover i {
     color: #c5a47e;
@@ -823,7 +831,7 @@ hr {
 }
 .nav-scroll {
     background: rgb(255,255,255);
-    background: linear-gradient(8deg, rgba(255,255,255,1) 0%,  rgb(34, 40, 49)71%);
+    background: rgb(117, 102, 85);
 
     /* background: linear-gradient(8deg, rgba(255,255,255,1) 0%,  rgb(64,162,227)71%); */
 
@@ -911,7 +919,7 @@ hr {
 }
 .navbar .dropdown-menu .dropdown-item {
     padding: 9px 0;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 300;
     color: #fff;
@@ -1008,7 +1016,7 @@ hr {
     margin-bottom: 4px;
 }
 .navbar .navbar-right .wrap .text h5 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 300;
     color: #fff;
@@ -1067,18 +1075,21 @@ hr {
         border: none;
     }
     .nav-scroll {
-        background: #7df4fbfc;
+        background: #494949fc;
     }
     .logo-wrapper {
         float: left;
-        padding: 23px 15px;
+        padding: 12px 11px;
+    }
+    .logo-wrapper .logo-img {
+       width: 130px;
     }
     .nav-scroll .logo-wrapper {
-        padding: 23px 15px;
+        padding: 12px 10px;
         background-color: transparent;
     }
     .nav-scroll .logo-img {
-        width: 100px;
+        width: 70px;
     }
     .navbar .logo {
         text-align: left;
@@ -1199,7 +1210,7 @@ hr {
 .header .caption h6 {
     position: relative;
     font-size: 15px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -1210,10 +1221,11 @@ hr {
 }
 .header .caption h1 {
     position: relative;
-    font-family: "Oswald", sans-serif;
-    font-size: 85px;
-    letter-spacing: 4px;
-    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-size: 65px;
+    letter-spacing: 2px;
+    color: #93a5e2;
+    padding-left: 29px;
     line-height: 1.2em;
     -webkit-animation-delay: .4s;
     animation-delay: .4s;
@@ -1293,14 +1305,14 @@ hr {
 }
 .slider-fade .owl-theme .owl-dots .owl-dot span,
 .slider .owl-theme .owl-dots .owl-dot span {
-    border: 1px solid rgb(169, 29, 58);
+    border: 1px solid #2C4E80;
 }
 .slider-fade .owl-theme .owl-dots .owl-dot.active span,
 .slider-fade .owl-theme .owl-dots .owl-dot:hover span,
 .slider .owl-theme .owl-dots .owl-dot.active span,
 .slider .owl-theme .owl-dots .owl-dot:hover span {
-    background: rgb(169, 29, 58);
-    border: 1px solid rgb(169, 29, 58);
+    background: #2C4E80;
+    border: 1px solid #2C4E80;
 }
 /* owl-theme owl-nav */
 .slider-fade .owl-theme .owl-nav,
@@ -1397,7 +1409,7 @@ hr {
 .parallax-header h6 {
     position: relative;
     font-size: 15px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -1409,7 +1421,7 @@ hr {
 .parallax-header[data-overlay-dark] h1,
 .parallax-header h1 {
     position: relative;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 85px;
     letter-spacing: 4px;
     color: #fff;
@@ -1489,7 +1501,7 @@ hr {
 .kenburns-inner .caption h6 {
     position: relative;
     font-size: 15px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -1500,7 +1512,7 @@ hr {
 }
 .kenburns-inner .caption h1 {
     position: relative;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 85px;
     letter-spacing: 4px;
     color: #fff;
@@ -1575,7 +1587,7 @@ position: relative;
 .video-fullscreen-wrap h6 {
     position: relative;
     font-size: 15px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     color: #fff;
     text-transform: uppercase;
@@ -1587,7 +1599,7 @@ position: relative;
 .video-fullscreen-wrap[data-overlay-dark] h1,
 .video-fullscreen-wrap h1 {
     position: relative;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 85px;
     letter-spacing: 4px;
     color: #fff;
@@ -1644,7 +1656,7 @@ position: relative;
     font-size: 15px;
     font-weight: 700;
     line-height: 15px;
-    color: rgb(169, 29, 58);
+    color: #2C4E80;
     /* color: #c5a47e; */
     margin-bottom: 10px;
     position: relative;
@@ -1733,7 +1745,7 @@ position: relative;
     letter-spacing: 2px;
 }
 .about .item .title h6 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-weight: 300;
     font-size: 17px;
@@ -1746,7 +1758,7 @@ position: relative;
     left: -6px;
     width: 90px;
     height: 90px;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #7df4fbfc; */
     border-top-right-radius: 50%;
     padding: 15px;
@@ -1763,7 +1775,7 @@ position: relative;
     width: 20px;
     height: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+    box-shadow: 6px 6px 0 6px #2C4E80;
     /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
      -webkit-transform:rotate(90deg);
      -moz-transform:rotate(90deg);
@@ -1780,7 +1792,7 @@ position: relative;
   width: 20px;
   height: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+  box-shadow: 6px 6px 0 6px #2C4E80;
   /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
  -webkit-transform:rotate(90deg);
  -moz-transform:rotate(90deg);
@@ -1841,7 +1853,7 @@ position: relative;
     -webkit-transform-origin: top right;
     -ms-transform-origin: top right;
     transform-origin: top right;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
 }
 .about .img2 .text h6 {
     -webkit-transform: scaleX(-1);
@@ -1915,7 +1927,7 @@ position: relative;
     right: -6px;
     width: 90px;
     height: 90px;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #7df4fbfc; */
     border-top-left-radius: 50%;
     padding: 15px;
@@ -1932,7 +1944,7 @@ position: relative;
     width: 20px;
     height: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+    box-shadow: 6px 6px 0 6px #2C4E80;
     /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
 }
 .services .item .icon::after {
@@ -1944,7 +1956,7 @@ position: relative;
   width: 20px;
   height: 20px;
   border-bottom-right-radius: 20px;
-  box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+  box-shadow: 6px 6px 0 6px #2C4E80;
   /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
 }
 .services .item .icon .arrow {
@@ -2138,7 +2150,7 @@ position: relative;
   position: absolute;
   top: -20px;
   right: -20px;
-  background: rgb(169, 29, 58);
+  background: #2C4E80;
   /* background: #7df4fbfc; */
   padding: 15px;
   border-radius: 0 0 0 40px;
@@ -2272,7 +2284,7 @@ position: relative;
 .service-details .sidebar-page .item .features span {
     color: #fff;
     text-transform: uppercase;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     letter-spacing: 2px;
     font-size: 17px;
@@ -2409,7 +2421,7 @@ position: relative;
     width: 100%;
 }
 .portfolio-home .item .con .title h6 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-weight: 300;
     font-size: 15px;
@@ -2682,7 +2694,7 @@ position: absolute;
     width: 100%;
 }
 .portfolio .item .con .title h6 {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: rgba(255,255,255,0.5);
     font-weight: 300;
     font-size: 15px;
@@ -2712,7 +2724,7 @@ color: #fff;
     width: 90px;
     height: 90px;
     line-height: 90px;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #7df4fbfc; */
     border-top-left-radius: 50%;
     padding: 15px;
@@ -2729,7 +2741,7 @@ position: absolute;
     width: 20px;
     height: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+    box-shadow: 6px 6px 0 6px #2C4E80;
     /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
 }
 .portfolio .item .con .icon::after {
@@ -2741,7 +2753,7 @@ position: absolute;
     width: 20px;
     height: 20px;
     border-bottom-right-radius: 20px;
-    box-shadow: 6px 6px 0 6px rgb(169, 29, 58);
+    box-shadow: 6px 6px 0 6px #2C4E80;
     /* box-shadow: 6px 6px 0 6px #7df4fbfc; */
 }
 .portfolio .item .con .icon .arrow {
@@ -2979,11 +2991,11 @@ position: absolute;
     margin: 0;
     font-size: 17px;
     font-weight: 300;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #c5a47e;
 }
 .team .item .wrapper .text .position {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     font-weight: 300;
     color: #999;
@@ -3233,7 +3245,7 @@ position: absolute;
     background: transparent !important;
     cursor: pointer;
     color: #fff;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 21px;;
     font-weight: 300;
     text-transform: uppercase;
@@ -3336,7 +3348,7 @@ position: absolute;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
     transition: all .4s;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 21px;;
     color: #fff;
     font-weight: 300;
@@ -3345,7 +3357,7 @@ position: absolute;
 }
 .price .item .rmore .arrow span { 
     color: #fff;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     display: inline-block;
     font-weight: 300;
@@ -3429,7 +3441,7 @@ position: absolute;
     position: relative;
     font-size: 21px;
     line-height: 25px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     cursor: pointer;
     padding: 40px 30px;
@@ -3443,7 +3455,7 @@ position: absolute;
     color: #fff;
     background: #c5a47e;
     font-weight: 300;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 17px;
     width: 50px;
     height: 50px;
@@ -3521,7 +3533,7 @@ position: absolute;
 }
 .testimonials .item .text h5 {
     border-radius: 20px;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #c5a47e;
     font-weight: 300;
     font-size: 17px;
@@ -3567,7 +3579,7 @@ position: absolute;
     position: relative;
     padding: 15px;
     border-radius: 0 40px 0 0;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #7df4fbfc; */
 }
 .testimonials .item .img-curv .shap-left-top {
@@ -3604,7 +3616,7 @@ position: absolute;
     position: relative;
 }
 .gallery-filter li {
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 21px;
     font-weight: 300;
     margin-right: 15px;
@@ -4092,7 +4104,7 @@ height: 100% !important;
     text-align: center;
 }
 .blog .item .icon i.icon-show span {
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     line-height: 15px;
     vertical-align: middle;
@@ -4101,7 +4113,7 @@ height: 100% !important;
     font-style: normal;
 }
 .blog .item .icon i.icon-show span i {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
     font-size: 12px;
@@ -4368,7 +4380,7 @@ height: 100% !important;
     font-size: 15px;
     color: #999;
     font-weight: 300;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     letter-spacing: 0;
     display: block;
     text-transform: none;
@@ -4405,7 +4417,7 @@ height: 100% !important;
     line-height: 50px;
     text-align: center;
     color: #fff;
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     border: 1px solid #1b1b1b;
     border-radius: 100%;
@@ -4418,14 +4430,14 @@ height: 100% !important;
 .pagination-wrap li a:hover {
     opacity: 1;
     text-decoration: none;
-    background: rgb(169, 29, 58);
-    border: 1px solid rgb(169, 29, 58);
+    background: #2C4E80;
+    border: 1px solid #2C4E80;
     color: #fff;
     transform: translate3d(0px, -6px, 0.01px);
 }
 .pagination-wrap li a.active {
-    background-color: rgb(169, 29, 58);
-    border:1px solid  rgb(169, 29, 58);
+    background-color: #2C4E80;
+    border:1px solid  #2C4E80;
     /* background-color: #c5a47e; */
     /* border: 1px solid #c5a47e; */
     color: #fff;
@@ -4610,7 +4622,7 @@ height: 100% !important;
     border-radius: 20px;
 }
 .contact-box .item.active {
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #c5a47e; */
 }
 .contact-box .item:hover {
@@ -4649,7 +4661,7 @@ height: 100% !important;
 }
 .contact-box .item span {
     font-size: 45px;
-    color: rgb(169, 29, 58);
+    color: #2C4E80;
     /* color: #c5a47e; */
     line-height: 1;
     margin-bottom: 15px;
@@ -4668,7 +4680,7 @@ height: 100% !important;
     position: absolute;
     bottom: -20px;
     right: -30px;
-    color: rgba(255,255,255, 0.2);
+    color: rgba(145, 115, 115, 0.2);
     opacity: .2;
 }
 .contact-box .item.active i.numb {
@@ -4783,7 +4795,7 @@ height: 100% !important;
     padding: 14px 35px;
     /* border: 1px solid #c5a47e; */
     border-radius: 40px;
-    background-color: rgb(169, 29, 58);
+    background-color: #2C4E80;
     /* background-color: #c5a47e; */
     color: #fff;
     text-align: center;
@@ -4805,7 +4817,7 @@ height: 100% !important;
     color: #7df4fbfc;
 }
 .button-1:hover {
-    border: 2px solid rgb(169, 29, 58);
+    border: 2px solid #2C4E80;
     background-color: transparent;
     /* border: 1px solid #fff; */
     /* background-color: #fff; */
@@ -4888,7 +4900,7 @@ height: 100% !important;
     padding: 14px 35px;
     /* border: 1px solid #c5a47e; */
     border-radius: 40px;
-    background-color: rgb(199, 54, 89);
+    background-color: #2C4E80;
     /* background-color: #c5a47e; */
     color: #fff;
     text-align: center;
@@ -5012,7 +5024,7 @@ height: 100% !important;
     line-height: 1.1em;
 }
 .lets-talk .section-subtitle {
-    color: rgb(169, 29, 58);
+    color: #7eaef7;
     /* color: #c5a47e; */
 }
 .lets-talk .wrap {
@@ -5060,12 +5072,12 @@ height: 100% !important;
     display: inline-block;
 }
 .lets-talk .wrap a {
-    font-family: "Outfit", sans-serif;
+    font-family: "Poppins", sans-serif;
     color: #fff;
     font-size: 16px;
 }
 .lets-talk .wrap a:hover {
-    color: rgb(169, 29, 58);
+    color: #86d2f5;
 }
 .lets-talk .wrap a i.icon-right {
     overflow: hidden;
@@ -5171,7 +5183,7 @@ select {
     position: relative;
 }
 .footer .top .item .links ul li:hover a {
-    color: rgb(169, 29, 58);
+    color: skyblue;
 }
 .footer .top .item .address { 
     color: rgba(255,255,255,0.7);
@@ -5217,7 +5229,7 @@ select {
     height: 50px;
     width: 50px;
     border: none;
-    background: rgb(169, 29, 58);
+    background: #2C4E80;
     /* background: #c5a47e; */
     font-size: 17px;
     font-weight: 300;
@@ -5242,7 +5254,7 @@ select {
 }
 .footer .top .item .newsletter:hover button {
     background:none;
-    border: 1px solid rgb(169, 29, 58);
+    border: 1px solid #2C4E80;
     /* background: #c5a47e; */
     outline: none;
     -webkit-transform: rotate(45deg);
@@ -5262,7 +5274,7 @@ select {
     font-size: 15px;
 }
 .footer .bottom p a {
-    background: linear-gradient(to bottom, rgb(169, 29, 58) 0%, rgb(169, 29, 58) 100%);
+    background: linear-gradient(to bottom, #2C4E80 0%, #2C4E80 100%);
     /* background: linear-gradient(to bottom, #c5a47e 0%, #c5a47e 100%); */
     background-position: 0 100%;
     background-repeat: repeat-x;
@@ -5272,7 +5284,7 @@ select {
     transition: background-size .2s;
 }
 .footer .bottom p a:hover {
-    color: rgb(169, 29, 58);
+    color: #2C4E80;
      /* color: #c5a47e; */
 }
 /* social icons */
@@ -5292,7 +5304,7 @@ select {
     transition: all .4s;
     border-radius: 100%;
     font-size: 17px;
-    color: rgb(169, 29, 58);
+    color: #2C4E80;
     /* background: #c5a47e; */
 }
 .footer .top .social-icons .list-inline {
@@ -5372,7 +5384,7 @@ select {
 }
 .progress-wrap svg.progress-circle path {
     /* stroke: #c5a47e; */
-    stroke: rgb(169, 29, 58);
+    stroke: #2C4E80;
 }
 
 
@@ -5460,7 +5472,7 @@ select {
     margin-bottom: 0;
 }
 .modal-title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 21px;
     color: white;
