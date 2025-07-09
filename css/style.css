@@ -170,7 +170,7 @@ textarea {
     color: #999;
     background-image: none;
     /* border: none; */
-    border-radius: 30px;
+    border-radius: 5px;
 }
 input[type="submit"],
 input[type="reset"],
@@ -232,7 +232,7 @@ input[type="submit"] {
     font-weight: 300;
     text-align: center;
     font-size: 17px;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 input[type="submit"]:hover {
     border: 2px solid #2C4E80;
@@ -4587,11 +4587,12 @@ height: 100% !important;
 
 .google-map {
 	width: 100%;
-    -webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+    /* -webkit-filter: grayscale(100%); */
+	/* filter: grayscale(100%); */
     height: calc(64% + 30px);
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 4px;
+    border: 1px ridge rgb(122, 122, 124);
 }
 
 
@@ -4792,9 +4793,9 @@ height: 100% !important;
 .button-1 {
     display: inline-block;
     height: auto;
-    padding: 14px 35px;
+    padding: 10px 30px;
     /* border: 1px solid #c5a47e; */
-    border-radius: 40px;
+    border-radius: 8px;
     background-color: #2C4E80;
     /* background-color: #c5a47e; */
     color: #fff;
@@ -4868,9 +4869,9 @@ height: 100% !important;
 .button-3 {
     display: inline-block;
     height: auto;
-    padding: 14px 35px;
+    padding: 10px 30px;
     border: 1px solid #fff;
-    border-radius: 40px;
+    border-radius: 8px;
     background-color: #fff;
     color: #fff;
     text-align: center;
@@ -4897,9 +4898,9 @@ height: 100% !important;
 .button-4 {
     display: inline-block;
     height: auto;
-    padding: 14px 35px;
+    padding: 10px 30px;
     /* border: 1px solid #c5a47e; */
-    border-radius: 40px;
+    border-radius: 8px;
     background-color: #2C4E80;
     /* background-color: #c5a47e; */
     color: #fff;
@@ -4931,9 +4932,9 @@ height: 100% !important;
 .button-5 {
     display: inline-block;
     height: auto;
-    padding: 14px 35px;
+    padding: 10px 30px;
     border: 1px solid #fff;
-    border-radius: 40px;
+    border-radius: 8px;
     background-color: #fff;
     color: #fff;
     text-align: center;
@@ -5380,7 +5381,8 @@ select {
 }
 .progress-wrap::after {
     /* color: #c5a47e; */
-    color: rgb(218,18,18);
+    color:rgb(64,162,227);
+    background-color:#464545;
 }
 .progress-wrap svg.progress-circle path {
     /* stroke: #c5a47e; */
