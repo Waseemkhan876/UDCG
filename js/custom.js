@@ -54,7 +54,7 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/UCDG_LOGO.png');
+            logo.attr('src', 'img/Logo-Desined-Waseem.jpg');
         } else {
             navbar.removeClass("nav-scroll");
             logo.attr('src', 'img/UCDG_LOGO.png');

@@ -830,8 +830,7 @@ hr {
     color: #c5a47e;
 }
 .nav-scroll {
-    background: rgb(255,255,255);
-    background: rgb(117, 102, 85);
+    background: #1a3255;
 
     /* background: linear-gradient(8deg, rgba(255,255,255,1) 0%,  rgb(64,162,227)71%); */
 
@@ -870,6 +869,7 @@ hr {
 }
 .nav-scroll .logo-img {
     margin-bottom: 0px;
+    border-radius: 20px;
 }
 .nav-scroll .logo-wrapper .logo h2 {
     display: block;
@@ -941,7 +941,7 @@ hr {
 }
 
 .navbar .dropdown-menu .dropdown-item.active i {
-    color: #c5a47e;
+    color: #52bdd8;
 }
 .navbar .dropdown-menu .dropdown:hover > .dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
