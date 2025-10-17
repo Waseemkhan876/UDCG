@@ -1388,7 +1388,7 @@ hr {
 .slider .owl-theme:hover .owl-nav [class*=owl-] {
     opacity: 1;
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 271px) {
     .slider-fade .owl-theme .owl-nav,
     .slider .owl-theme .owl-nav {
         display: none;
